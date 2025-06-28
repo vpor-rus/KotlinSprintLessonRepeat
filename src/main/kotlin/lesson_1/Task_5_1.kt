@@ -11,5 +11,18 @@ package org.example.lesson_1
 */
 
 fun main() {
+    val second: Short = 6_480
+    val minute = second / SECOND_IN_ONE_MINUTE
+    println("количество минут $minute")
+    val remainsFromMinutes = second % SECOND_IN_ONE_MINUTE
+    println("остаток секунд от минут $remainsFromMinutes")
+    val hours = second / SECOND_IN_ONE_HOUR
+    println("количество часов $hours")
+    val remainsFromHour = second % SECOND_IN_ONE_HOUR
+    println("остаток от часов $remainsFromHour")
 
 }
+
+const val SECOND_IN_ONE_MINUTE = 60
+
+const val SECOND_IN_ONE_HOUR = 3600
