@@ -1,4 +1,12 @@
+package lesson_5/*
+package org.example.lesson_5
 
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import org.jsoup.nodes.Element
+import org.jsoup.select.Elements
+
+*/
 /*Парсер сайта. Видео гайд по парсингу: https://vk.cc/cEQsA0
 
 Задача написать консольную программу, которая подключается к веб-странице и вытаскивает
@@ -16,6 +24,7 @@ https://mybook.ru/author/duglas-adams/avtostopom-po-galaktike-restoran-u-konca-v
 
 - Найди на странице тэг, в которых хранятся цитаты;
 
+- Извлеки текст из каждого элемента (только с первой страницы) и выведи его на экран.*//*
 
 
 fun main() {
@@ -28,4 +37,4 @@ fun main() {
 }
 
 // так и не понял что вставлять в attr, а что в absUrl
-
+// у меня приложение ничего не вывело, но и ошибок не дало.*/
