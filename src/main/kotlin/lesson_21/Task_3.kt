@@ -7,6 +7,7 @@ package org.example.lesson_21
 
 Требуется реализовать функцию-расширение isHealthy для этого класса, которая будет возвращать true,
 если здоровье игрока равно максимальному здоровью, и false в противном случае.*/
+/*
 
 fun main() {
     val player1 = Gamer("первый игрок", 100)
@@ -24,4 +25,4 @@ data class Gamer(
     val name: String,
     val healthLevel: Int,
     val maxHealthLevel: Int = 100,
-)
+)*/
