@@ -12,15 +12,12 @@ package org.example.lesson_1
 
 fun main() {
     val second: Short = 6_480
-    val minute = second / SECOND_IN_ONE_MINUTE
-    println("количество минут $minute")
-    val remainsFromMinutes = second % SECOND_IN_ONE_MINUTE
-    println("остаток секунд от минут $remainsFromMinutes")
     val hours = second / SECOND_IN_ONE_HOUR
-    println("количество часов $hours")
-    val remainsFromHour = second % SECOND_IN_ONE_HOUR
-    println("остаток от часов $remainsFromHour")
+    val minute = (second % SECOND_IN_ONE_HOUR) / SECOND_IN_ONE_MINUTE
+    val reminingsSecond = second - ((((second / SECOND_IN_ONE_HOUR) * SECOND_IN_ONE_HOUR) +
+            ((second % SECOND_IN_ONE_HOUR) / SECOND_IN_ONE_MINUTE) * SECOND_IN_ONE_MINUTE))
 
+   println("%02d:%02d:%02d".format(hours, minute, reminingsSecond))
 }
 
 const val SECOND_IN_ONE_MINUTE = 60
